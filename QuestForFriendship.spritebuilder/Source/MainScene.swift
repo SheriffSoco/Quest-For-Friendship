@@ -29,7 +29,7 @@ class MainScene: CCNode {
     override func touchBegan(touch: CCTouch!, withEvent: CCTouchEvent!) {
         var location = touch.locationInNode(self)
         
-        if location.x < 284 {
+        if location.x < connor.position.x {
             movement = -1
         }
         else {
