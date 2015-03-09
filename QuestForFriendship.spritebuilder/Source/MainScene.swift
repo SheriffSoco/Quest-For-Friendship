@@ -13,10 +13,16 @@ class MainScene: CCNode {
         if movement == -1 {
             connor.position = ccp(connor.position.x - movementSpeed, connor.position.y)
             connor.flipX = true
+            if connor.animationManager.runningSequenceName == "Standstill" {
+                connor.animationManager.runAnimationsForSequenceNamed("Running")
+            }
         }
         else if movement == 1 {
             connor.position = ccp(connor.position.x + movementSpeed, connor.position.y)
             connor.flipX = false
+            if connor.animationManager.runningSequenceName == "Standstill" {
+                connor.animationManager.runAnimationsForSequenceNamed("Running")
+            }
         }
     }
     

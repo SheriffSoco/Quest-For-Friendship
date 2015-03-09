@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -38,6 +38,8 @@
 		<key>animatedProperties</key>
 		<dict>
 			<key>0</key>
+			<dict/>
+			<key>1</key>
 			<dict>
 				<key>spriteFrame</key>
 				<dict>
@@ -57,24 +59,6 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>new player/0.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.10000000149011612</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
 								<string>new player/1.png</string>
 								<string>Use regular file</string>
 							</array>
@@ -88,7 +72,7 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.20000000298023224</real>
+							<real>0.1666666716337204</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
@@ -106,12 +90,30 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.30000001192092896</real>
+							<real>0.3333333432674408</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
 								<string>new player/1.png</string>
+								<string>Use regular file</string>
+							</array>
+						</dict>
+						<dict>
+							<key>easing</key>
+							<dict>
+								<key>type</key>
+								<integer>0</integer>
+							</dict>
+							<key>name</key>
+							<string>spriteFrame</string>
+							<key>time</key>
+							<real>0.5</real>
+							<key>type</key>
+							<integer>7</integer>
+							<key>value</key>
+							<array>
+								<string>new player/0.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -186,7 +188,7 @@
 			<dict>
 				<key>baseValue</key>
 				<array>
-					<string>player movements/0.png</string>
+					<string>new player/0.png</string>
 					<string>Use regular file</string>
 				</array>
 				<key>name</key>
@@ -196,7 +198,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>new player/1.png</string>
+					<string>new player/0.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -285,17 +287,53 @@
 			<key>length</key>
 			<real>0.40000000596046448</real>
 			<key>name</key>
-			<string>Default Timeline</string>
+			<string>Standstill</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.30000001192092896</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
 			<real>304.233154296875</real>
 			<key>sequenceId</key>
 			<integer>0</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>isExpanded</key>
+				<false/>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>autoPlay</key>
+			<false/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>12</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>0</integer>
+			<key>length</key>
+			<real>0.66666668653488159</real>
+			<key>name</key>
+			<string>Running</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.66666668653488159</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>304.233154296875</real>
+			<key>sequenceId</key>
+			<integer>1</integer>
 			<key>soundChannel</key>
 			<dict>
 				<key>isExpanded</key>
