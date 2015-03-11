@@ -3,9 +3,15 @@ import Foundation
 class MainScene: CCNode {
     var movementSpeed : CGFloat = 2
     var movement : CGFloat = 0
+    var camera : CCNode!
     var connor : CCSprite!
+    var dock1 : CCSprite!
+    var dock2 : CCSprite!
+    var docks : [CCSprite] = []
     
     func didLoadFromCCB() {
+        docks.append(dock1)
+        docks.append(dock2)
         self.userInteractionEnabled = true
     }
     
@@ -16,12 +22,31 @@ class MainScene: CCNode {
             if connor.animationManager.runningSequenceName == "Standstill" {
                 connor.animationManager.runAnimationsForSequenceNamed("Running")
             }
+            if connor.position.x < 100 {
+                camera.position = ccp(camera.position.x + movementSpeed, camera.position.y)
+            }
         }
         else if movement == 1 {
             connor.position = ccp(connor.position.x + movementSpeed, connor.position.y)
             connor.flipX = false
             if connor.animationManager.runningSequenceName == "Standstill" {
                 connor.animationManager.runAnimationsForSequenceNamed("Running")
+            }
+            if connor.position.x > 468 {
+                camera.position = ccp(camera.position.x - movementSpeed, camera.position.y)
+            }
+        }
+        
+        
+        //to move dock sprites
+        for dock in docks {
+            let dockWorldPosition = camera.convertToWorldSpace(dock.position)
+            let dockScreenPosition = self.convertToNodeSpace(dockWorldPosition)
+            if dockScreenPosition.x <= (-dock.contentSize.width) {
+                dock.position = ccp(dock.position.x + dock.contentSize.width * 2, dock.position.y)
+            }
+            else if dockScreenPosition.x >= (dock.contentSize.width) {
+                dock.position = ccp(dock.position.x - dock.contentSize.width * 2, dock.position.y)
             }
         }
     }
@@ -39,6 +64,10 @@ class MainScene: CCNode {
 
     override func touchEnded(touch: CCTouch!, withEvent: CCTouchEvent!) {
         movement = 0
+    }
+    
+    func moveScene(direction: CGFloat) {
+        
     }
 
 }
