@@ -22,7 +22,7 @@ class MainScene: CCNode {
             if connor.animationManager.runningSequenceName == "Standstill" {
                 connor.animationManager.runAnimationsForSequenceNamed("Running")
             }
-            if connor.position.x < 100 {
+            if connor.position.x + camera.position.x < 100 {
                 camera.position = ccp(camera.position.x + movementSpeed, camera.position.y)
             }
         }
@@ -32,7 +32,7 @@ class MainScene: CCNode {
             if connor.animationManager.runningSequenceName == "Standstill" {
                 connor.animationManager.runAnimationsForSequenceNamed("Running")
             }
-            if connor.position.x > 468 {
+            if connor.position.x + camera.position.x > 468 {
                 camera.position = ccp(camera.position.x - movementSpeed, camera.position.y)
             }
         }
@@ -52,7 +52,7 @@ class MainScene: CCNode {
     }
     
     override func touchBegan(touch: CCTouch!, withEvent: CCTouchEvent!) {
-        var location = touch.locationInNode(self)
+        var location = touch.locationInNode(camera)
         
         if location.x < connor.position.x {
             movement = -1
