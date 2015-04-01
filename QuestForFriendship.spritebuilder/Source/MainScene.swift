@@ -8,10 +8,12 @@ class MainScene: CCNode {
     var dock1 : CCSprite!
     var dock2 : CCSprite!
     var docks : [CCSprite] = []
+    var testHouseDoor : Door!
     
     func didLoadFromCCB() {
         docks.append(dock1)
         docks.append(dock2)
+        testHouseDoor.nextScene = "TestInside"
         self.userInteractionEnabled = true
     }
     
@@ -59,6 +61,14 @@ class MainScene: CCNode {
         }
         else {
             movement = 1
+        }
+        
+        //for entering doors
+        if location.x < (testHouseDoor.position.x + 24.5) && location.x > (testHouseDoor.position.x - 24.5) {
+            if location.y < (testHouseDoor.position.y + 44.5) && location.y > (testHouseDoor.position.y - 44.5) {
+                let mainScene: CCScene = CCBReader.loadAsScene(testHouseDoor.nextScene)
+                CCDirector.sharedDirector().replaceScene(mainScene);
+            }
         }
     }
 

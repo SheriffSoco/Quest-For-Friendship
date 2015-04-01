@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16693FD61AB357AF0079DEF3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16693FD51AB357AF0079DEF3 /* House.swift */; };
-		16693FD81AB35A4F0079DEF3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16693FD51AB357AF0079DEF3 /* House.swift */; };
 		16693FD91AB35A510079DEF3 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A35A0E1AB0B6FA0023FAFC /* Friend.swift */; };
+		1680CE0A1ABC952200838D9B /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680CE091ABC952200838D9B /* Door.swift */; };
+		1680CE0B1ABC952200838D9B /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680CE091ABC952200838D9B /* Door.swift */; };
 		16A35A0F1AB0B6FA0023FAFC /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A35A0E1AB0B6FA0023FAFC /* Friend.swift */; };
 		5B121030197484FA004C1E1D /* QuestForFriendshipActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* QuestForFriendshipActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
@@ -145,7 +145,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16693FD51AB357AF0079DEF3 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		1680CE091ABC952200838D9B /* Door.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Door.swift; sourceTree = "<group>"; };
 		16A35A0E1AB0B6FA0023FAFC /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -434,7 +434,7 @@
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
-				16693FD51AB357AF0079DEF3 /* House.swift */,
+				1680CE091ABC952200838D9B /* Door.swift */,
 				16A35A0E1AB0B6FA0023FAFC /* Friend.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
@@ -790,7 +790,7 @@
 				7A10CE5619F32FB0001673C3 /* MainScene.swift in Sources */,
 				7A40360419DDEE84007B6E8F /* main.m in Sources */,
 				16693FD91AB35A510079DEF3 /* Friend.swift in Sources */,
-				16693FD81AB35A4F0079DEF3 /* House.swift in Sources */,
+				1680CE0B1ABC952200838D9B /* Door.swift in Sources */,
 				7A59498E19E3941300F65F90 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,7 +810,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
-				16693FD61AB357AF0079DEF3 /* House.swift in Sources */,
+				1680CE0A1ABC952200838D9B /* Door.swift in Sources */,
 				16A35A0F1AB0B6FA0023FAFC /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
