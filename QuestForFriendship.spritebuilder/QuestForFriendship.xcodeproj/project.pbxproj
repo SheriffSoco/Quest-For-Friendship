@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161C02421ACE606800544912 /* TestInside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C02411ACE606800544912 /* TestInside.swift */; };
+		161C02431ACE606800544912 /* TestInside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C02411ACE606800544912 /* TestInside.swift */; };
 		16693FD91AB35A510079DEF3 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A35A0E1AB0B6FA0023FAFC /* Friend.swift */; };
 		1680CE0A1ABC952200838D9B /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680CE091ABC952200838D9B /* Door.swift */; };
 		1680CE0B1ABC952200838D9B /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680CE091ABC952200838D9B /* Door.swift */; };
@@ -145,6 +147,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		161C02411ACE606800544912 /* TestInside.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestInside.swift; sourceTree = "<group>"; };
 		1680CE091ABC952200838D9B /* Door.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Door.swift; sourceTree = "<group>"; };
 		16A35A0E1AB0B6FA0023FAFC /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
@@ -434,6 +437,7 @@
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
+				161C02411ACE606800544912 /* TestInside.swift */,
 				1680CE091ABC952200838D9B /* Door.swift */,
 				16A35A0E1AB0B6FA0023FAFC /* Friend.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -788,6 +792,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A10CE5619F32FB0001673C3 /* MainScene.swift in Sources */,
+				161C02431ACE606800544912 /* TestInside.swift in Sources */,
 				7A40360419DDEE84007B6E8F /* main.m in Sources */,
 				16693FD91AB35A510079DEF3 /* Friend.swift in Sources */,
 				1680CE0B1ABC952200838D9B /* Door.swift in Sources */,
@@ -808,6 +813,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
+				161C02421ACE606800544912 /* TestInside.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				1680CE0A1ABC952200838D9B /* Door.swift in Sources */,
