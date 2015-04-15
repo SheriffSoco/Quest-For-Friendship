@@ -22,8 +22,8 @@ class TestInside: CCNode {
     
     override func update(delta: CCTime) {
         if movement == -1 {
-            if connor.position.x < 40 {
-                movement = 0
+            if connor.position.x < 18 {
+                connor.position = ccp(connor.position.x + movementSpeed, connor.position.y)
             }
             connor.position = ccp(connor.position.x - movementSpeed, connor.position.y)
             connor.flipX = true
@@ -32,8 +32,8 @@ class TestInside: CCNode {
             }
         }
         else if movement == 1 {
-            if connor.position.x > 520 {
-                movement = 0
+            if connor.position.x > 550 {
+                connor.position = ccp(connor.position.x - movementSpeed, connor.position.y)
             }
             connor.position = ccp(connor.position.x + movementSpeed, connor.position.y)
             connor.flipX = false
