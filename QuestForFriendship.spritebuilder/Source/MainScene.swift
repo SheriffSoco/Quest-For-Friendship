@@ -2,13 +2,13 @@ import Foundation
 
 class MainScene: CCNode {
     var movementSpeed : CGFloat = 3
-    var movement : CGFloat = 0
+    var movement : CGFloat = 0 //init movement
+    var cancel : CGFloat = 0 //init walls
     var camera : CCNode!
     var connor : CCSprite!
     var dock1 : CCSprite!
     var dock2 : CCSprite!
     var docks : [CCSprite] = []
-    var testHouseDoor : Door!
     var menuButton : CGFloat = 0
     var friendsButton : CCButton!
     var backpackButton : CCButton!
@@ -16,12 +16,15 @@ class MainScene: CCNode {
     var backpackScreen : BackpackInventory!
     var menuSwitch : CGFloat = 0
     var exitButton : CCButton!
+    var testHouseDoor : CCButton!
+    var insideTestHouseDoor : CCButton!
     
     func didLoadFromCCB() {
         docks.append(dock1)
         docks.append(dock2)
-        testHouseDoor.nextScene = "TestInside"
         self.userInteractionEnabled = true
+        
+        //loading Door destination points
     }
     
     override func update(delta: CCTime) {
@@ -33,7 +36,14 @@ class MainScene: CCNode {
                     connor.animationManager.runAnimationsForSequenceNamed("Running")
                 }
                 if connor.position.x + camera.position.x < 100 {
-                    camera.position = ccp(camera.position.x + movementSpeed, camera.position.y)
+                    if cancel == 0 {
+                        camera.position = ccp(camera.position.x + movementSpeed, camera.position.y)
+                    }
+                    else {
+                        if connor.position.x + camera.position.x < 0 {
+                            connor.position = ccp(connor.position.x + movementSpeed, connor.position.y)
+                        }
+                    }
                 }
             }
             else if movement == 1 {
@@ -43,7 +53,14 @@ class MainScene: CCNode {
                     connor.animationManager.runAnimationsForSequenceNamed("Running")
                 }
                 if connor.position.x + camera.position.x > 468 {
-                    camera.position = ccp(camera.position.x - movementSpeed, camera.position.y)
+                    if cancel == 0 {
+                        camera.position = ccp(camera.position.x - movementSpeed, camera.position.y)
+                    }
+                    else {
+                        if connor.position.x + camera.position.x > 504 {
+                            connor.position = ccp(connor.position.x - movementSpeed, connor.position.y)
+                        }
+                    }
                 }
             }
         }
@@ -65,24 +82,6 @@ class MainScene: CCNode {
     override func touchBegan(touch: CCTouch!, withEvent: CCTouchEvent!) {
         var location = touch.locationInNode(camera)
         
-        /*for menus (archived)
-        if location.x < (settingsButton.position.x + 40.0 + camera.position.x) && location.x > (settingsButton.position.x + camera.position.x) {
-            if location.y < (settingsButton.position.y + 40.0) && location.y > (settingsButton.position.y) {
-                backpackScreen.menuButton = 1
-            }
-        }
-        if location.x < (backpackButton.position.x + 40.0 + camera.position.x) && location.x > (backpackButton.position.x + camera.position.x) {
-            if location.y < (backpackButton.position.y + 40.0) && location.y > (backpackButton.position.y) {
-                backpackScreen.menuButton = 2
-            }
-        }
-        if location.x < (friendsButton.position.x + 40.0 + camera.position.x) && location.x > (friendsButton.position.x + camera.position.x) {
-            if location.y < (friendsButton.position.y + 40.0) && location.y > (friendsButton.position.y) {
-                backpackScreen.menuButton = 3
-            }
-        }
-        */
-        
         if backpackScreen.menuButton == 0 {
             //for movement
             if location.x < connor.position.x {
@@ -91,7 +90,7 @@ class MainScene: CCNode {
             else {
                 movement = 1
             }
-            //for entering doors
+            /*for entering doors (archived)
             if location.x < (testHouseDoor.position.x + 24.5) && location.x > (testHouseDoor.position.x - 24.5) {
                 if location.y < (testHouseDoor.position.y + 44.5) && location.y > (testHouseDoor.position.y - 44.5) {
                     let nextRoom: CCScene = CCBReader.loadAsScene(testHouseDoor.nextScene)
@@ -99,6 +98,7 @@ class MainScene: CCNode {
                     movement = 0
                 }
             }
+            */
         }
     }
 
@@ -111,6 +111,17 @@ class MainScene: CCNode {
     func menu() {
         backpackScreen.visible = true
         backpackScreen.menuButton = 1
+    }
+    
+    func testEnter() {
+        camera.position = ccp(-self.position.x, camera.position.y - 320)
+        connor.position = ccp(insideTestHouseDoor.position.x, insideTestHouseDoor.position.y)
+        cancel = 1
+    }
+    func testExit() {
+        camera.position = ccp(-self.position.x, camera.position.y + 320)
+        connor.position = ccp(testHouseDoor.position.x, testHouseDoor.position.y)
+        cancel = 0
     }
 
 }

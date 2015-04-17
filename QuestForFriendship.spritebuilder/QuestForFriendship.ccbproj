@@ -80,6 +80,8 @@
 		</dict>
 		<key>Sprites</key>
 		<dict/>
+		<key>assets/Buttons/Friends_UnSelected.png</key>
+		<dict/>
 		<key>assets/chest</key>
 		<dict>
 			<key>previewFolderHidden</key>
@@ -180,61 +182,6 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 			<key>tabletScale</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements</key>
-		<dict>
-			<key>previewFolderHidden</key>
-			<true/>
-		</dict>
-		<key>player movements/0.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements/1.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements/2.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements/3.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements/4.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements/5.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements/6.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements/7.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements/8.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>player movements/9.png</key>
-		<dict>
-			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
 	</dict>

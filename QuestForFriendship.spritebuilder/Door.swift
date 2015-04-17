@@ -8,11 +8,8 @@
 
 import Foundation
 
-class Door: CCSprite {
-    var nextScene: NSString = "MainScene"
-    
-    func moveToNextScene (room: NSString) {
-        let scene: CCScene = CCBReader.loadAsScene(room)
-        CCDirector.sharedDirector().replaceScene(scene)
-    }
+class Door: CCButton {
+    var nextScene : String = "MainScene"
+    var xcoor : CGFloat = 0
+    var ycoor : CGFloat = 0
 }
