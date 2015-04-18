@@ -28,6 +28,14 @@ class MainScene: CCNode {
     var doorThree : CCButton!
     var insideDoorThree : CCButton!
     
+    var friends : [Friend] = []
+    var sebastianChant : Friend!
+    
+    var items : [Item] = []
+    var oar : Item!
+    
+    var oarIcon : CCSprite!
+    
     /*
     var insideHouseFour : CCSprite!
     var doorFour : CCButton!
@@ -41,10 +49,34 @@ class MainScene: CCNode {
     func didLoadFromCCB() {
         docks.append(dock1)
         docks.append(dock2)
+        friends.append(sebastianChant)
+        items.append(oar)
         self.userInteractionEnabled = true
+        sebastianChant.itemWanted = 1
+        oar.id = 1
     }
     
     override func update(delta: CCTime) {
+        for friend in friends {
+            if friend.checkForItem == true {
+                if backpackScreen.hasOar == true {
+                    backpackScreen.give()
+                    friendsScreen.fullHead()
+                    oarIcon.visible = false
+                }
+                else {
+                    friendsScreen.halfHead()
+                    oarIcon.visible = true
+                }
+                friend.checkForItem = false
+            }
+        }
+        for item in items {
+            if item.grabbed == true && item.alreadyGrabbed == false {
+                backpackScreen.grabItem(item.id)
+                item.alreadyGrabbed = true
+            }
+        }
         if friendsScreen.menuButton == 0 && backpackScreen.menuButton == 0 {
             if movement == -1 {
                 connor.position = ccp(connor.position.x - movementSpeed, connor.position.y)

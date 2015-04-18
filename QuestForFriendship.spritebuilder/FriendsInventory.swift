@@ -18,6 +18,10 @@ class FriendsInventory : CCNode {
     var yBItem : CGFloat = 103
     var yCItem : CGFloat = 30
     
+    var full : CCSprite!
+    var half : CCSprite!
+    var none : CCSprite!
+    
     var one : CCNode!
     var two : CCNode!
     var three : CCNode!
@@ -76,5 +80,17 @@ class FriendsInventory : CCNode {
                 friend.visible = false
             }
         }
+    }
+    
+    func fullHead() {
+        full.visible = true
+        half.visible = false
+        none.visible = false
+    }
+    
+    func halfHead() {
+        full.visible = false
+        half.visible = true
+        none.visible = false
     }
 }

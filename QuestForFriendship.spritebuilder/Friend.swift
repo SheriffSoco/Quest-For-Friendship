@@ -10,4 +10,12 @@ import Foundation
 
 class Friend : CCSprite {
     
+    var itemWanted = 0
+    var checkForItem = false
+    
+    func check() {
+        checkForItem = true
+    }
+    
+    
 }

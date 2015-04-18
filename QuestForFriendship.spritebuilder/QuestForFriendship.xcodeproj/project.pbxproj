@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		165D01021AE1F8BD00E985DB /* BackpackInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165D01011AE1F8BD00E985DB /* BackpackInventory.swift */; };
 		165D01031AE1F8BD00E985DB /* BackpackInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165D01011AE1F8BD00E985DB /* BackpackInventory.swift */; };
+		165D01231AE22DD700E985DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165D01221AE22DD700E985DB /* Item.swift */; };
+		165D01241AE22DD700E985DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165D01221AE22DD700E985DB /* Item.swift */; };
 		16693FD91AB35A510079DEF3 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A35A0E1AB0B6FA0023FAFC /* Friend.swift */; };
 		166AB4961ADC60360041A0CC /* FriendsInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166AB4951ADC60360041A0CC /* FriendsInventory.swift */; };
 		166AB4971ADC60360041A0CC /* FriendsInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166AB4951ADC60360041A0CC /* FriendsInventory.swift */; };
@@ -148,6 +150,7 @@
 
 /* Begin PBXFileReference section */
 		165D01011AE1F8BD00E985DB /* BackpackInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackpackInventory.swift; sourceTree = "<group>"; };
+		165D01221AE22DD700E985DB /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		166AB4951ADC60360041A0CC /* FriendsInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsInventory.swift; sourceTree = "<group>"; };
 		16A35A0E1AB0B6FA0023FAFC /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
@@ -437,6 +440,7 @@
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
+				165D01221AE22DD700E985DB /* Item.swift */,
 				166AB4951ADC60360041A0CC /* FriendsInventory.swift */,
 				165D01011AE1F8BD00E985DB /* BackpackInventory.swift */,
 				16A35A0E1AB0B6FA0023FAFC /* Friend.swift */,
@@ -795,6 +799,7 @@
 				7A40360419DDEE84007B6E8F /* main.m in Sources */,
 				165D01031AE1F8BD00E985DB /* BackpackInventory.swift in Sources */,
 				16693FD91AB35A510079DEF3 /* Friend.swift in Sources */,
+				165D01241AE22DD700E985DB /* Item.swift in Sources */,
 				7A59498E19E3941300F65F90 /* AppDelegate.m in Sources */,
 				166AB4971ADC60360041A0CC /* FriendsInventory.swift in Sources */,
 			);
@@ -816,6 +821,7 @@
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				165D01021AE1F8BD00E985DB /* BackpackInventory.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
+				165D01231AE22DD700E985DB /* Item.swift in Sources */,
 				16A35A0F1AB0B6FA0023FAFC /* Friend.swift in Sources */,
 				166AB4961ADC60360041A0CC /* FriendsInventory.swift in Sources */,
 			);
