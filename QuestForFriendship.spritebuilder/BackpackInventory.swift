@@ -11,22 +11,15 @@ import Foundation
 class BackpackInventory : CCNode {
     
     var menuButton = 0
-    var cancelButton : CCButton!
-    var one: CCButton!
-    var two : CCButton!
-    var three : CCButton!
-    var four : CCButton!
-    var five : CCButton!
-    var six : CCButton!
-    var seven : CCButton!
-    var eight : CCButton!
-    var nine : CCButton!
-    var ten : CCButton!
-    var eleven : CCButton!
-    var twelve : CCButton!
     
-    func cancel() {
+    func exit() {
         self.visible = false
         menuButton = 0
     }
+    
+    func open() {
+        self.visible = true
+        menuButton = 1
+    }
+    
 }

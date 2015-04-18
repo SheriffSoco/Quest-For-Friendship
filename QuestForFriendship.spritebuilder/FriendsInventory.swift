@@ -18,7 +18,6 @@ class FriendsInventory : CCNode {
     var yBItem : CGFloat = 103
     var yCItem : CGFloat = 30
     
-    var exitButton : CCButton!
     var one : CCNode!
     var two : CCNode!
     var three : CCNode!

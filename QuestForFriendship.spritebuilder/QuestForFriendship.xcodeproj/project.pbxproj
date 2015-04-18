@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		161C02421ACE606800544912 /* TestInside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C02411ACE606800544912 /* TestInside.swift */; };
-		161C02431ACE606800544912 /* TestInside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161C02411ACE606800544912 /* TestInside.swift */; };
+		165D01021AE1F8BD00E985DB /* BackpackInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165D01011AE1F8BD00E985DB /* BackpackInventory.swift */; };
+		165D01031AE1F8BD00E985DB /* BackpackInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165D01011AE1F8BD00E985DB /* BackpackInventory.swift */; };
 		16693FD91AB35A510079DEF3 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A35A0E1AB0B6FA0023FAFC /* Friend.swift */; };
 		166AB4961ADC60360041A0CC /* FriendsInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166AB4951ADC60360041A0CC /* FriendsInventory.swift */; };
 		166AB4971ADC60360041A0CC /* FriendsInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166AB4951ADC60360041A0CC /* FriendsInventory.swift */; };
-		1680CE0A1ABC952200838D9B /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680CE091ABC952200838D9B /* Door.swift */; };
-		1680CE0B1ABC952200838D9B /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680CE091ABC952200838D9B /* Door.swift */; };
-		1691B6321AE1E1E500E5EB37 /* BackpackInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1691B6311AE1E1E500E5EB37 /* BackpackInventory.swift */; };
 		16A35A0F1AB0B6FA0023FAFC /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A35A0E1AB0B6FA0023FAFC /* Friend.swift */; };
 		5B121030197484FA004C1E1D /* QuestForFriendshipActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* QuestForFriendshipActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
@@ -150,10 +147,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		161C02411ACE606800544912 /* TestInside.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestInside.swift; sourceTree = "<group>"; };
+		165D01011AE1F8BD00E985DB /* BackpackInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackpackInventory.swift; sourceTree = "<group>"; };
 		166AB4951ADC60360041A0CC /* FriendsInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsInventory.swift; sourceTree = "<group>"; };
-		1680CE091ABC952200838D9B /* Door.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Door.swift; sourceTree = "<group>"; };
-		1691B6311AE1E1E500E5EB37 /* BackpackInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackpackInventory.swift; sourceTree = "<group>"; };
 		16A35A0E1AB0B6FA0023FAFC /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -443,9 +438,7 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
 				166AB4951ADC60360041A0CC /* FriendsInventory.swift */,
-				1691B6311AE1E1E500E5EB37 /* BackpackInventory.swift */,
-				161C02411ACE606800544912 /* TestInside.swift */,
-				1680CE091ABC952200838D9B /* Door.swift */,
+				165D01011AE1F8BD00E985DB /* BackpackInventory.swift */,
 				16A35A0E1AB0B6FA0023FAFC /* Friend.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
@@ -799,10 +792,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A10CE5619F32FB0001673C3 /* MainScene.swift in Sources */,
-				161C02431ACE606800544912 /* TestInside.swift in Sources */,
 				7A40360419DDEE84007B6E8F /* main.m in Sources */,
+				165D01031AE1F8BD00E985DB /* BackpackInventory.swift in Sources */,
 				16693FD91AB35A510079DEF3 /* Friend.swift in Sources */,
-				1680CE0B1ABC952200838D9B /* Door.swift in Sources */,
 				7A59498E19E3941300F65F90 /* AppDelegate.m in Sources */,
 				166AB4971ADC60360041A0CC /* FriendsInventory.swift in Sources */,
 			);
@@ -820,12 +812,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1691B6321AE1E1E500E5EB37 /* BackpackInventory.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
-				161C02421ACE606800544912 /* TestInside.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
+				165D01021AE1F8BD00E985DB /* BackpackInventory.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
-				1680CE0A1ABC952200838D9B /* Door.swift in Sources */,
 				16A35A0F1AB0B6FA0023FAFC /* Friend.swift in Sources */,
 				166AB4961ADC60360041A0CC /* FriendsInventory.swift in Sources */,
 			);

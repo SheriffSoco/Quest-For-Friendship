@@ -3,7 +3,7 @@ import Foundation
 class MainScene: CCNode {
     var movementSpeed : CGFloat = 3
     var movement : CGFloat = 0 //init movement
-    var scroll : CGFloat = 0 //init walls
+    var scroll : Bool = false //init walls
     var camera : CCNode!
     var connor : CCSprite!
     var dock1 : CCSprite!
@@ -15,8 +15,28 @@ class MainScene: CCNode {
     var friendsScreen : FriendsInventory!
     var backpackScreen : BackpackInventory!
     var menuSwitch : CGFloat = 0
-    var testHouseDoor : CCButton!
-    var insideTestHouseDoor : CCButton!
+    
+    var insideHouseOne : CCSprite!
+    var doorOne : CCButton!
+    var insideDoorOne : CCButton!
+    
+    var insideHouseTwo : CCSprite!
+    var doorTwo : CCButton!
+    var insideDoorTwo : CCButton!
+    
+    var insideHouseThree : CCSprite!
+    var doorThree : CCButton!
+    var insideDoorThree : CCButton!
+    
+    /*
+    var insideHouseFour : CCSprite!
+    var doorFour : CCButton!
+    var insideDoorFour : CCButton!
+    
+    var insideHouseFive : CCSprite!
+    var doorFive : CCButton!
+    var insideDoorFive : CCButton!
+    */
     
     func didLoadFromCCB() {
         docks.append(dock1)
@@ -25,7 +45,7 @@ class MainScene: CCNode {
     }
     
     override func update(delta: CCTime) {
-        if friendsScreen.menuButton == 0 || backpackScreen.menuButton == 0 {
+        if friendsScreen.menuButton == 0 && backpackScreen.menuButton == 0 {
             if movement == -1 {
                 connor.position = ccp(connor.position.x - movementSpeed, connor.position.y)
                 connor.flipX = true
@@ -33,7 +53,7 @@ class MainScene: CCNode {
                     connor.animationManager.runAnimationsForSequenceNamed("Running")
                 }
                 if connor.position.x + camera.position.x < 100 {
-                    if scroll == 0 {
+                    if scroll == false {
                         camera.position = ccp(camera.position.x + movementSpeed, camera.position.y)
                     }
                     else {
@@ -50,7 +70,7 @@ class MainScene: CCNode {
                     connor.animationManager.runAnimationsForSequenceNamed("Running")
                 }
                 if connor.position.x + camera.position.x > 468 {
-                    if scroll == 0 {
+                    if scroll == false {
                         camera.position = ccp(camera.position.x - movementSpeed, camera.position.y)
                     }
                     else {
@@ -96,19 +116,69 @@ class MainScene: CCNode {
         connor.animationManager.runAnimationsForSequenceNamed("Standstill")
     }
     
-    func menu() {
+    func friendmenu() {
         friendsScreen.open()
     }
     
-    func testEnter() {
-        camera.position = ccp(-self.position.x, camera.position.y - 320)
-        connor.position = ccp(insideTestHouseDoor.position.x, insideTestHouseDoor.position.y)
-        scroll = 1
+    func backpackmenu() {
+        backpackScreen.open()
     }
-    func testExit() {
-        camera.position = ccp(-self.position.x, camera.position.y + 320)
-        connor.position = ccp(testHouseDoor.position.x, testHouseDoor.position.y)
-        scroll = 0
+    
+    func houseOneEnter() {
+        camera.position = ccp(-insideHouseOne.position.x, -insideHouseOne.position.y)
+        connor.position = ccp(insideDoorOne.position.x, insideDoorOne.position.y)
+        scroll = true
     }
+    func houseOneExit() {
+        camera.position = ccp(-doorOne.position.x + 60, -doorOne.position.y + 103)
+        connor.position = ccp(doorOne.position.x, doorOne.position.y - 11.5)
+        scroll = false
+    }
+    
+    func houseTwoEnter() {
+        camera.position = ccp(-insideHouseTwo.position.x, -insideHouseTwo.position.y)
+        connor.position = ccp(insideDoorTwo.position.x, insideDoorTwo.position.y)
+        scroll = true
+    }
+    func houseTwoExit() {
+        camera.position = ccp(-doorTwo.position.x + 60, -doorTwo.position.y + 103)
+        connor.position = ccp(doorTwo.position.x, doorTwo.position.y - 11.5)
+        scroll = false
+    }
+    
+    func houseThreeEnter() {
+        camera.position = ccp(-insideHouseThree.position.x, -insideHouseThree.position.y)
+        connor.position = ccp(insideDoorThree.position.x, insideDoorThree.position.y)
+        scroll = true
+    }
+    func houseThreeExit() {
+        camera.position = ccp(-doorThree.position.x + 60, -doorThree.position.y + 103)
+        connor.position = ccp(doorThree.position.x, doorThree.position.y - 11.5)
+        scroll = false
+    }
+    
+    /*
+    func houseFourEnter() {
+        camera.position = ccp(-insideHouseFour.position.x, -insideHouseFour.position.y)
+        connor.position = ccp(insideDoorFour.position.x, insideDoorFour.position.y)
+        scroll = true
+    }
+    func houseFourExit() {
+        camera.position = ccp(-doorFour.position.x + 60, -doorFour.position.y + 103)
+        connor.position = ccp(doorFour.position.x, doorFour.position.y - 11.5)
+        scroll = false
+    }
+    
+    func houseFiveEnter() {
+        camera.position = ccp(-insideHouseFive.position.x, -insideHouseFive.position.y)
+        connor.position = ccp(insideDoorFive.position.x, insideDoorFive.position.y)
+        scroll = true
+    }
+    func houseFiveExit() {
+        camera.position = ccp(-doorFive.position.x + 60, -doorFive.position.y + 103)
+        connor.position = ccp(doorFive.position.x, doorFive.position.y - 11.5)
+        scroll = false
+    }
+    */
 
 }
