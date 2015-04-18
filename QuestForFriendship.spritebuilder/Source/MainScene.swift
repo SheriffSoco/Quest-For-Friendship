@@ -13,7 +13,7 @@ class MainScene: CCNode {
     var friendsButton : CCButton!
     var backpackButton : CCButton!
     var settingsButton : CCButton!
-    var friendsScreen : FriendsInventory!
+    var backpackScreen : BackpackInventory!
     var menuSwitch : CGFloat = 0
     var exitButton : CCButton!
     var testHouseDoor : CCButton!
@@ -82,7 +82,7 @@ class MainScene: CCNode {
     override func touchBegan(touch: CCTouch!, withEvent: CCTouchEvent!) {
         var location = touch.locationInNode(camera)
         
-        if friendsScreen.menuButton == 0 {
+        if backpackScreen.menuButton == 0 {
             //for movement
             if location.x < connor.position.x {
                 movement = -1
@@ -109,7 +109,8 @@ class MainScene: CCNode {
     }
     
     func menu() {
-        friendsScreen.open()
+        backpackScreen.visible = true
+        backpackScreen.menuButton = 1
     }
     
     func testEnter() {
