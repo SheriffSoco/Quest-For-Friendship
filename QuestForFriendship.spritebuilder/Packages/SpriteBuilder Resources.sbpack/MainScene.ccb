@@ -2490,7 +2490,7 @@
 				<key>displayName</key>
 				<string>backpackMenu</string>
 				<key>memberVarAssignmentName</key>
-				<string>backpackMenu</string>
+				<string>backpackScreen</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
