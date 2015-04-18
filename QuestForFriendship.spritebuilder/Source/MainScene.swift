@@ -3,18 +3,19 @@ import Foundation
 class MainScene: CCNode {
     var movementSpeed : CGFloat = 3
     var movement : CGFloat = 0 //init movement
-    var scroll : CGFloat = 0 //init walls
+    var cancel : CGFloat = 0 //init walls
     var camera : CCNode!
     var connor : CCSprite!
     var dock1 : CCSprite!
     var dock2 : CCSprite!
     var docks : [CCSprite] = []
+    var menuButton : CGFloat = 0
     var friendsButton : CCButton!
     var backpackButton : CCButton!
     var settingsButton : CCButton!
     var friendsScreen : FriendsInventory!
-    var backpackScreen : BackpackInventory!
     var menuSwitch : CGFloat = 0
+    var exitButton : CCButton!
     var testHouseDoor : CCButton!
     var insideTestHouseDoor : CCButton!
     
@@ -22,10 +23,12 @@ class MainScene: CCNode {
         docks.append(dock1)
         docks.append(dock2)
         self.userInteractionEnabled = true
+        
+        //loading Door destination points
     }
     
     override func update(delta: CCTime) {
-        if friendsScreen.menuButton == 0 || backpackScreen.menuButton == 0 {
+        if menuButton == 0 {
             if movement == -1 {
                 connor.position = ccp(connor.position.x - movementSpeed, connor.position.y)
                 connor.flipX = true
@@ -33,7 +36,7 @@ class MainScene: CCNode {
                     connor.animationManager.runAnimationsForSequenceNamed("Running")
                 }
                 if connor.position.x + camera.position.x < 100 {
-                    if scroll == 0 {
+                    if cancel == 0 {
                         camera.position = ccp(camera.position.x + movementSpeed, camera.position.y)
                     }
                     else {
@@ -50,7 +53,7 @@ class MainScene: CCNode {
                     connor.animationManager.runAnimationsForSequenceNamed("Running")
                 }
                 if connor.position.x + camera.position.x > 468 {
-                    if scroll == 0 {
+                    if cancel == 0 {
                         camera.position = ccp(camera.position.x - movementSpeed, camera.position.y)
                     }
                     else {
@@ -87,6 +90,15 @@ class MainScene: CCNode {
             else {
                 movement = 1
             }
+            /*for entering doors (archived)
+            if location.x < (testHouseDoor.position.x + 24.5) && location.x > (testHouseDoor.position.x - 24.5) {
+                if location.y < (testHouseDoor.position.y + 44.5) && location.y > (testHouseDoor.position.y - 44.5) {
+                    let nextRoom: CCScene = CCBReader.loadAsScene(testHouseDoor.nextScene)
+                    CCDirector.sharedDirector().replaceScene(nextRoom);
+                    movement = 0
+                }
+            }
+            */
         }
     }
 
@@ -103,12 +115,12 @@ class MainScene: CCNode {
     func testEnter() {
         camera.position = ccp(-self.position.x, camera.position.y - 320)
         connor.position = ccp(insideTestHouseDoor.position.x, insideTestHouseDoor.position.y)
-        scroll = 1
+        cancel = 1
     }
     func testExit() {
         camera.position = ccp(-self.position.x, camera.position.y + 320)
         connor.position = ccp(testHouseDoor.position.x, testHouseDoor.position.y)
-        scroll = 0
+        cancel = 0
     }
 
 }
