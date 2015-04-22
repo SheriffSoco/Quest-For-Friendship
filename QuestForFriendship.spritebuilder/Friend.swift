@@ -12,6 +12,7 @@ class Friend : CCSprite {
     
     var itemWanted = 0
     var checkForItem = false
+    var alreadyGiven = false
     
     func check() {
         checkForItem = true

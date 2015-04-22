@@ -3277,14 +3277,12 @@
 								<array/>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCNode</string>
+				<string>camera</string>
 				<key>memberVarAssignmentName</key>
 				<string>camera</string>
 				<key>memberVarAssignmentType</key>
@@ -3351,6 +3349,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

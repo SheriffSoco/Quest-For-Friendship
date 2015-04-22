@@ -1,7 +1,7 @@
 import Foundation
 
 class MainScene: CCNode {
-    var movementSpeed : CGFloat = 3
+    var movementSpeed : CGFloat = 2.5
     var movement : CGFloat = 0 //init movement
     var scroll : Bool = false //init walls
     var camera : CCNode!
@@ -58,11 +58,12 @@ class MainScene: CCNode {
     
     override func update(delta: CCTime) {
         for friend in friends {
-            if friend.checkForItem == true {
+            if friend.checkForItem == true && friend.alreadyGiven == false {
                 if backpackScreen.hasOar == true {
                     backpackScreen.give()
                     friendsScreen.fullHead()
                     oarIcon.visible = false
+                    friend.alreadyGiven = true
                 }
                 else {
                     friendsScreen.halfHead()
