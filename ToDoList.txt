@@ -1,7 +1,3 @@
 List of things to do:
-- Create scrolling function (Jacob)
-- Finish walking animation (Nicolai)
-- Detail background and dock png's (Nicolai)
-- Create first house (Nicolai)
-- Create door image (Nicolai)
-- Implement Outside to Inside and vice versa (Jacob)
+- Finish Story Plot (Both)
+- Create more hats
