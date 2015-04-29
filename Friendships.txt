@@ -1,4 +1,18 @@
 Things players need:
-•	Sebastian Chant | Boat | Wants oar - get on ground - gives 1 gold and 2 extra pack slots
-•	Tyler Gunninghand | Bunny | Wants carrot - get on ground - gives 2 gold and ____
-•	
+Dover Isle: (Transportation)
+-	Sebastian Chant | Boat | Oar - groundDover - 2 extra slots
+-	Trace Jackwood | Yacht | Money (50g) - gives key to boat
+-	Zach Timber | Pickup Truck | Wrench
+-	| Beetle Car | Grapes 
+-	| SUV | Soccer Ball
+-	| Luxury Car | Polo Helmet
+-	| Lemon | Nice Shoes
+-	| Formula 1 | Skateboard
+-	*| Rock | Beat in RPS
+Parachute Island: (Animals)
+-	Tyler Gunninghand | Bunny | Carrot
+
+Gander Paradise: (Tools)
+
+
+Mayer Place: (Food)

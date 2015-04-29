@@ -2,7 +2,7 @@ Hats:
 •	Animals:
 	•	Bear
 	•	Ladybug
-	•	Bunny - Done
+	•	Bunny - Done & Plot
 	•	Cat
 	•	Bear
 	•	Turtle
@@ -10,24 +10,23 @@ Hats:
 	•	Butterfly
 	•	Frog
 	•	Monkey
-	•	Chicken
+	•	Chicken - Done
 	•	Panda
+	•	Horse
 
 
 	•	Transportation:
-	•	Pickup Truck
-	•	Apple
-	•	Rock
-	•	Beetle Car
+	•	Pickup Truck - Done & Plot
+	•	Beetle Car - Plot
 	•	Mini Cooper
-	•	SUV
-	•	Luxury Car
+	•	SUV - Plot
+	•	Luxury Car - Plot
 	•	Monster Truck
-	•	Lemon
-	•	Formula 1
-	•	NASCAR
+	•	Lemon - Plot
+	•	Formula 1 - Plot
+	•	NASCAR - Plot
 	•	Prius
-	•	Boat
+	•	Boat - Done & Plot
 	•	Yacht
 	•	Kayak
 	•	Canoe
@@ -48,7 +47,6 @@ Hats:
 	•	Wheelbarrow
 	•	Duct Tape
 	•	Glue
-	•	Wrench
 	•	Toolkit
 
 	•	Food:
@@ -57,7 +55,8 @@ Hats:
 	•	Apple
 	•	Sushi
 	•	PB&J
-	•	Cheese
+	•	Cheese	
+	•	Apple
 
 
 	•	Shops:
@@ -66,6 +65,7 @@ Hats:
 	•	Tools - Credit Card
 	•	Flowers - (Money?) Tree
 	•	 
-	•	 Special/Minigames
+	•	Special/Minigames
 	•	Question Mark - Tutorial
 	•	Wires - Connect the lines
+	•	Rock - Rock Paper Scissors | Done & Plot
