@@ -1,0 +1,71 @@
+Hats:
+•	Animals:
+	•	Bear
+	•	Ladybug
+	•	Bunny - Done
+	•	Cat
+	•	Bear
+	•	Turtle
+	•	Dog
+	•	Butterfly
+	•	Frog
+	•	Monkey
+	•	Chicken
+	•	Panda
+
+
+	•	Transportation:
+	•	Pickup Truck
+	•	Apple
+	•	Rock
+	•	Beetle Car
+	•	Mini Cooper
+	•	SUV
+	•	Luxury Car
+	•	Monster Truck
+	•	Lemon
+	•	Formula 1
+	•	NASCAR
+	•	Prius
+	•	Boat
+	•	Yacht
+	•	Kayak
+	•	Canoe
+	•	Surfboard
+	•	Skateboard
+	•	Bicycle
+	•	Unicycle
+	•	Tricycle
+	•	
+
+	•	Tools and Instruments:
+	•	Shovel
+	•	Axe
+	•	Sword
+	•	Hammer
+	•	Bucket
+	•	Screw/Nail
+	•	Wheelbarrow
+	•	Duct Tape
+	•	Glue
+	•	Wrench
+	•	Toolkit
+
+	•	Food:
+	•	Taco
+	•	Sundae
+	•	Apple
+	•	Sushi
+	•	PB&J
+	•	Cheese
+
+
+	•	Shops:
+	•	Animals - Chameleon
+	•	Cars - Armored Truck
+	•	Tools - Credit Card
+	•	Flowers - (Money?) Tree
+	•	 
+	•	 Special/Minigames
+	•	Question Mark - Tutorial
+	•	Wires - Connect the lines
